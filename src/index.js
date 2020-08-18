@@ -36,3 +36,13 @@ function fetchImages() {
   .then(resp => resp.json())
   .then(json => postImage(json))
 }
+
+function postImage(json) {
+  let dogImageContainer = document.getElementById('dog-image-container');
+  let listOfImages = document.createElement('ul');
+  dogImageContainer.append(listOfImages);
+  json.message.forEach(e => {
+    let item = document.createElement('li');
+    item.innerHTML = `<img src= ${e}>`;
+  })
+};
