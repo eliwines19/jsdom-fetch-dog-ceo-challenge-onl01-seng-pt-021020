@@ -4,6 +4,10 @@ document.addEventListener("DOMContenLoaded", function() {
   let dogImageContainer = document.getElementById('dog-image-container');
   let dogBreedsUl = document.getElementById('dog-breeds');
 
+  function renderBooks() {
+    const dogImageContainer = document.getElementById('dog-image-container');
+  };
+
   function fetchDogImages() {
     return fetch('https://dog.ceo/api/breeds/image/random/4')
     .then(resp => resp.json())
