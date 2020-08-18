@@ -45,5 +45,5 @@ function postImage(json) {
     let item = document.createElement('li');
     item.innerHTML = `<img src= ${e}>`;
     listOfImages.append(item);
-  })
+  });
 };
