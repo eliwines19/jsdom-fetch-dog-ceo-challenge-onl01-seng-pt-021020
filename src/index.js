@@ -27,6 +27,6 @@ function postBreed(json) {
     }
   }
   breedList.addEventListener("click", e => {
-    e.target.style.color = 'blue';
+    e.target.style.color = 'purple';
   });
 };
