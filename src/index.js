@@ -66,4 +66,5 @@ function filter() {
 document.addEventListener("DOMContentLoaded", function() {
   fetchImages();
   fetchBreeds();
+  filter();
 });
