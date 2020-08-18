@@ -49,18 +49,19 @@ function postImage(json) {
 };
 
 function filter() {
-  let breedDropdown = document.getElementById('breedDropdown');
-  breedDropdown.value = "";
-  breedDropdown.addEventListener("change", e => {
-    document.getElementByClassName('breed').forEach(element => {
-      if (element.innerText.toLowerCase().charAt(0) == e.target.value) {
-        element.style.display = "block";
-      }
-      else {
-        element.style.display = "none"
-      }
-    })
-  })
+	let breedDropDown = document.querySelector("#breed-dropdown");
+	breedDropDown.value = "";
+	breedDropDown.addEventListener('change', e => {
+		document.querySelectorAll('.breed').forEach(element => {
+			// debugger
+			if (element.innerText.toLowerCase().charAt(0) == e.target.value) {
+				element.style.display = "block";
+			}
+			else {
+				element.style.display = "none";
+			}
+		})
+	})
 }
 
 document.addEventListener("DOMContentLoaded", function() {
