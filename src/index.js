@@ -51,4 +51,4 @@ function postImage(json) {
 document.addEventListener("DOMContentLoaded", function() {
   fetchImages();
   fetchBreeds();
-})
+});
