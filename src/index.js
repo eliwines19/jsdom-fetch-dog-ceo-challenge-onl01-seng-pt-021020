@@ -18,4 +18,6 @@ document.addEventListener("DOMContenLoaded", function() {
     .then(json => renderImages(json))
   };
 
+  
+
 });
