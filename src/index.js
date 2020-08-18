@@ -5,7 +5,9 @@ document.addEventListener("DOMContenLoaded", function() {
   let dogBreedsUl = document.getElementById('dog-breeds');
 
   function fetchDogImages() {
-    return fetch('https://dog.ceo/api/breeds/image/random/4') 
+    return fetch('https://dog.ceo/api/breeds/image/random/4')
+    .then(resp => resp.json())
+    .then(json => renderImages(json))
   };
 
 });
