@@ -47,3 +47,8 @@ function postImage(json) {
     listOfImages.append(item);
   });
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetchImages();
+  fetchBreeds();
+})
