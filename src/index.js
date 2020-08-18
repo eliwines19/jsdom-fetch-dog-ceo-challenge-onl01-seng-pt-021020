@@ -11,9 +11,9 @@ function fetchBreeds() {
 
 function postBreed(json) {
   let breedList = document.getElementById('dog-breeds');
-  for (let key in json.messages) {
+  for (let key in json.message) {
     let breed = document.createElement('li');
-    if (json message[key].length > 0) {
+    if (json.message[key].length > 0) {
       json.message[key].forEach(e => {
         breed.innerHTML = `${e} ${key}`;
         breed.className = "breed";
