@@ -3,8 +3,13 @@ document.addEventListener("DOMContenLoaded", function() {
 
   let dogBreedsUl = document.getElementById('dog-breeds');
 
-  function renderBooks() {
+  function renderImages(images) {
     const dogImageContainer = document.getElementById('dog-image-container');
+    images.forEach(image => {
+      const img = document.createElement('img');
+      img.src = image;
+      dogImageContainer.appendChild(img);
+    })
   };
 
   function fetchDogImages() {
