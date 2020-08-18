@@ -44,5 +44,6 @@ function postImage(json) {
   json.message.forEach(e => {
     let item = document.createElement('li');
     item.innerHTML = `<img src= ${e}>`;
+    listOfImages.append(item);
   })
 };
