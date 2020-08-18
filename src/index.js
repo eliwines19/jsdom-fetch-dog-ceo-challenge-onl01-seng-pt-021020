@@ -30,3 +30,9 @@ function postBreed(json) {
     e.target.style.color = 'purple';
   });
 };
+
+function fetchImages() {
+  fetch(imgUrl)
+  .then(resp => resp.json())
+  .then(json => postImage(json))
+}
